@@ -23,7 +23,7 @@ namespace HitachiSolutions
         public static string PERFECT_DAY = "Perfect Day";
 
         //files
-        public static string INPUT_FILE_NAME = "test.txt";
-        public static string OUTPUT_FILENAME = "WeatherReport.csv";
+        public static string DEFAULT_INPUT_FILE_PATH = "test.txt";
+        public static string DEFAULT_OUTPUT_FILE_PATH = "WeatherReport.csv";
     }
 }

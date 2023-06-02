@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmpax\\Desktop\\HitachiSolutions\\HitachiSolutions\\HitachiSolutions.csproj",
+      "projectUniqueName": "C:\\Programming\\c#\\hitachi_space\\HitachiSolutions\\HitachiSolutions.csproj",
       "projectName": "HitachiSolutions",
-      "projectPath": "C:\\Users\\cmpax\\Desktop\\HitachiSolutions\\HitachiSolutions\\HitachiSolutions.csproj",
+      "projectPath": "C:\\Programming\\c#\\hitachi_space\\HitachiSolutions\\HitachiSolutions.csproj",
       "packagesPath": "C:\\Users\\cmpax\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cmpax\\Desktop\\HitachiSolutions\\HitachiSolutions\\obj\\",
+      "outputPath": "C:\\Programming\\c#\\hitachi_space\\HitachiSolutions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cmpax\\AppData\\Roaming\\NuGet\\NuGet.Config",

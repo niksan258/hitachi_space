@@ -18,7 +18,7 @@ namespace HitachiSolutions
                 Console.WriteLine("Enter filePath to the weather forecast (or press enter for default path ).");
                 string filePath = Console.ReadLine();
 
-                if (filePath == "") filePath = Constants.INPUT_FILE_NAME;
+                if (filePath == "") filePath = Constants.DEFAULT_INPUT_FILE_PATH;
 
 
                 List<WeatherDayModel> parsedList = WeatherCsvParser.Parse(filePath);
@@ -27,7 +27,7 @@ namespace HitachiSolutions
 
                 WeatherReport weatherReport = new WeatherReport(parsedList);
                 bool writeStatus = WeatherCsvParser.WriteToFile(weatherReport.ReportTable(),
-                                                                    Constants.OUTPUT_FILENAME);
+                                                                    Constants.DEFAULT_OUTPUT_FILE_PATH);
 
                 if (!writeStatus)
                     throw new Exception("Could not save report");
@@ -45,7 +45,7 @@ namespace HitachiSolutions
 
                 SMTPClient client = new SMTPClient();
                 bool emailSent = client.SendMail(senderEmail, senderPassword,
-                    receiverEmail, Constants.OUTPUT_FILENAME);
+                    receiverEmail, Constants.DEFAULT_OUTPUT_FILE_PATH);
 
                 if (!emailSent) throw new Exception("Failed to send email.");
                 
