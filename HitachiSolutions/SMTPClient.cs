@@ -11,9 +11,9 @@ namespace HitachiSolutions
     public class SMTPClient
     {
         private SmtpClient mailServer;
-        public SMTPClient() 
+        public SMTPClient(string server, int port)
         {
-            mailServer = new SmtpClient("smtp.office365.com", 587); 
+            mailServer = new SmtpClient(server, port); 
             mailServer.EnableSsl = true;
         } 
 

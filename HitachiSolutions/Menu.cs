@@ -43,7 +43,7 @@ namespace HitachiSolutions
                 string receiverEmail = Console.ReadLine();
 
 
-                SMTPClient client = new SMTPClient();
+                SMTPClient client = new SMTPClient("smtp.office365.com", 587);
                 bool emailSent = client.SendMail(senderEmail, senderPassword,
                     receiverEmail, Constants.DEFAULT_OUTPUT_FILE_PATH);
 
